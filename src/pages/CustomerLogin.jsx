@@ -8,7 +8,6 @@ const CustomerLogin = () => {
     username: '',
     password: '',
   });
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -29,6 +28,8 @@ const CustomerLogin = () => {
     if (customer) 
     {
       sessionStorage.setItem('isCustomer', 'true');
+      // save the full customer object so the home page can render details
+      sessionStorage.setItem('customerInfo', JSON.stringify(customer));
       alert(`Login successful! Welcome, ${customer.fullName}!`);
       console.log('Login successful:', customer);
       setFormData({
