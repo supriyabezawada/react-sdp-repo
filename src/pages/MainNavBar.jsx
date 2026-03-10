@@ -15,7 +15,7 @@ const MainNavBar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link to="/" className="logo-link">
-              Event Management System
+              Event Management System - 2500030483
           </Link>
         </div>
         <ul className="nav-menu">
@@ -75,4 +75,4 @@ const MainNavBar = () => {
   );
 };
 
-export default MainNavBar;
+export default MainNavBar; 
